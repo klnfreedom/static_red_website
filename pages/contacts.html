@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="../src/styles.css">
+
+    <title>Contacts</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <a class="header-button" href="../index.html">Red</a>
+            <nav class="header-navbar">
+                <ul>
+                    <li class="header-navbar-list-item"><a class="header-navbar-link"
+                            href="articles.html">Articles</a></li>
+                    <li class="header-navbar-list-item"><a class="header-navbar-link"
+                            href="catalog.html">Catalog</a></li>
+                    <li class="header-navbar-list-item"><a
+                            class="header-navbar-link  header-navbar-link--active header-navbar-link:hover"
+                            href="contacts.html">Contacts</a></li>
+                    <li class="header-navbar-list-item"><a class="header-navbar-link"
+                            href="gallery.html">Gallery</a></li>
+                    <li class="header-navbar-list-item"><a class="header-navbar-link"
+                            href="page-nav.html">Page-Nav</a></li>
+                    <li class="header-navbar-list-item"><a class="header-navbar-link"
+                            href="registration.html">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <p>prov. Heroiv Mariupolya, Kremenchuk</p>
+
+    <div>
+        <img src="../src/images/contacts_map.png" alt="Google Map" width="300" height="250">
+    </div>
+
+    <div>
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+            <fieldset>
+                <legend>Contact's Info</legend>
+                <div>
+                    <label for="name-cont">Name</label>
+                    <input id="name-cont" name="name-cont" placeholder="Name" type="text">
+                </div>
+                <div>
+                    <label for="tel">Phone</label>
+                    <input id="tel" name="tel" placeholder="Phone" type="tel">
+                </div>
+                <div>
+                    <label for="email-cont">Email</label>
+                    <input id="email-cont" name="email-cont" placeholder="Email" type="email">
+                </div>
+                <div>
+                    <label for="txt-question">Ask question</label>
+                    <textarea cols="30" id="txt-question" name="txt-question" rows="10"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send form</button>
+                </div>
+                <div>
+                    <button type="reset">Clear form</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>&COPY; Mykola Mieshkov</p>
+    </footer>
+
+</body>
+
+</html>
