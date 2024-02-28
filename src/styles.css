@@ -1,6 +1,6 @@
-* {
+:root {
   /* Sizes */
-  --header-height: 80px;
+  --header-height: 64px;
   --content-max-width: 1100px;
 
   /* Margins */
@@ -18,11 +18,16 @@
   --border-color: #565455;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+}
+
 html {
   background-color: var(--color-bg-primary);
   min-width: calc(min(100%, var(--content-max-width)));
-  margin: 0%;
-  padding: 0%;
 }
 
 body {
@@ -41,6 +46,7 @@ body {
 
 .header__container {
   width: var(--content-max-width);
+  height: var(--header-height);
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -127,7 +133,7 @@ body {
 }
 
 .main__home__container__nav__title {
-  padding-left: 24px;
+  padding: 12px;
   font-weight: bold;
   color: white;
 }
