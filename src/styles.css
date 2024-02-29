@@ -139,6 +139,36 @@ body::-webkit-scrollbar {
   padding: 24px;
 }
 
+.main__gallery__container__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__gallery__container__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-bg-primary);
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.main__gallery__container__group:hover {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+  scale: 1.05;
+}
+
+.main__gallery__container__group__image {
+  object-fit: cover;
+  width: 320px;
+  height: 500px;
+}
+
 .main__catalog__container__list {
   gap: 24px;
   list-style: circle !important;
@@ -149,18 +179,46 @@ body::-webkit-scrollbar {
   font-weight: 600;
   list-style: circle !important;
   margin-bottom: 8px;
-  margin-left: 24px;
+  margin-left: 36px;
 }
 
 .main__catalog__container__title {
   color: white;
   font-size: 32px;
   font-weight: bold;
+  margin-bottom: 14px;
 }
 
 .main__contacts__title {
   font-size: 32px;
   font-weight: bold;
+}
+
+.main__container__page_nav {
+  background-color: var(--color-accent);
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 24px;
+  padding: 16px;
+  gap: 24px;
+  list-style: none;
+}
+
+.main__container__page_nav__item {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main__container__page_nav__item__link {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.main__container__page_nav__item__link:hover {
+  color: var(--color-bg-primary);
+  text-decoration: underline;
+  transition: 0.3s;
 }
 
 .main__container {
@@ -171,6 +229,28 @@ body::-webkit-scrollbar {
 .main__container__card {
   background-color: var(--color-accent);
   padding: 24px;
+}
+
+.main__container__subtitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.main__container__subtitle__1 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.main__container__subtitle__2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
 
 .main__container__comments {
