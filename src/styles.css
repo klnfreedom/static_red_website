@@ -223,3 +223,27 @@ body::-webkit-scrollbar {
   color: white;
   font-weight: bold;
 }
+
+.main__catalog__container {
+  background-color: var(--color-accent);
+  padding: 24px;
+}
+
+.main__catalog__container__list {
+  list-style: circle !important;
+  gap: 24px;
+}
+
+.main__catalog__container__list__item {
+  list-style: circle !important;
+  margin-left: 24px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.main__catalog__container__title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
