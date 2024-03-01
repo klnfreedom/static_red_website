@@ -415,7 +415,6 @@ body::-webkit-scrollbar {
 }
 
 .main__contacts__container__section__row__form__fieldset__row {
-  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -447,4 +446,92 @@ body::-webkit-scrollbar {
   font-weight: bold;
   padding: 8px;
   transition: 0.3s;
+}
+
+.main__contacts__container__section__row__form__fieldset__row__input__submit:hover {
+  background-color: var(--color-accent-light);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main__sign_up__container__form {
+  background-color: var(--color-accent);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.main__sign_up__container__form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.main__sign_up__container__form__fieldset__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.main__sign_up__container__form__fieldset__row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main__sign_up__container__form__radio__section {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 8px;
+  background-color: white;
+}
+
+.main__sign_up__container__form__fieldset__row__radio {
+  gap: 8px;
+}
+
+.main__sign_up__container__form__fieldset__row__input {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.main__sign_up__container__form__fieldset__row__input__avatar {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 8px;
+}
+
+.main__sign_up__container__form__fieldset__row__input__date {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 7px;
+  width: 100%;
+}
+
+.main__sign_up__container__form__fieldset__textarea {
+  width: 100%;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding: 8px;
+  resize: vertical;
+}
+
+.main__sign_up__container__form__buttons__section {
+  background-color: var(--color-bg-primary);
+  padding: 16px;
 }

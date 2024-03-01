@@ -5,20 +5,6 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <style>
-        .custom-fieldset {
-            border: 0;
-        }
-
-        form {
-            border: #000000;
-            border-width: 1px;
-            border-style: solid;
-            padding: 12px;
-            margin-top: 4px;
-        }
-    </style>
     <link rel="stylesheet" href="../src/styles.css">
 
     <title>Registration</title>
@@ -43,112 +29,133 @@
                     <li><a class="header__nav__item" href="gallery.html">Gallery</a></li>
                     <li><a class="header__nav__item" href="page-nav.html">Page-Nav</a>
                     </li>
-                    <li><a class="header__nav__item active" href="registration.html">Registration</a>
+                    <li><a class="header__nav__item active"
+                            href="registration.html">Registration</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <main>
-        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
-
-            <fieldset class="custom-fieldset">
-                <legend style="font-weight: 600; padding-left: 0px;">Mandority
-                    Info</legend>
-
-                <div style="margin-top: 10px;">
-                    <label for="lastname">Lastname</label>
-                    <input id="lastname" name="lastname" placeholder="Lastname" type="text">
-                </div>
-                <div>
-                    <label for="firstname">Firstname</label>
-                    <input id="firstname" name="firstname" placeholder="Firstname" type="text">
-                </div>
-                <div>
-                    <label for="surname">Surname</label>
-                    <input id="surname" name="surname" placeholder="Surname" type="text">
-                </div>
-            </fieldset>
-
-            <fieldset class="custom-fieldset">
-                <div>
-                    <label for="avatar">Choose avatar</label>
-                    <input id="avatar" name="avatar" type="file">
-                </div>
-            </fieldset>
-
-            <fieldset class="custom-fieldset">
-                <div>
-                    <label for="email">Email</label>
-                    <input id="email" name="email" placeholder="Email" type="email">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input id="password" name="password" placeholder="Password" type="password">
-                </div>
-            </fieldset>
-
-            <fieldset class="custom-fieldset">
-                <div>
-                    <label for="site">Web address</label>
-                    <input id="site" name="site" type="text" value="mysite.name">
-                </div>
-            </fieldset>
-
-            <fieldset class="custom-fieldset">
-                <div>
-                    <input id="gender-male" name="gender" type="radio" value="male">
-                    <label for="gender-male">Man</label>
-                </div>
-                <div>
-                    <input id="gender-female" name="gender" type="radio" value="female">
-                    <label for="gender-female">Female</label>
-                </div>
-                <div>
-                    <input id="gender-non-binary" name="gender" type="radio" value="non-binary">
-                    <label for="gender-non-binary">Non Binary</label>
-                </div>
-            </fieldset>
-
-            <fieldset class="custom-fieldset">
-                <div>
-                    <label for="date">Date of birth</label>
-                    <input id="date" name="date" type="date">
-                </div>
-            </fieldset>
-
-            <fieldset class="custom-fieldset">
-                <legend style="padding-bottom: 0px; padding-top: 10px;">Choose your preferred
-                    dishes:</legend>
-
-                <div>
-                    <input checked id="kitchen-ua" name="kitchen" type="checkbox" value="ua">
-                    <label for="kitchen-ua">Ukraininan</label>
-                </div>
-                <div>
-                    <input id="kitchen-jp" name="kitchen" type="checkbox" value="jp">
-                    <label for="kitchen-jp">Japanese</label>
-                </div>
-                <div>
-                    <input id="kitchen-ch" name="kitchen" type="checkbox" value="ch">
-                    <label for="kitchen-ch">Chinese</label>
-                </div>
-            </fieldset>
-
-            <fieldset class="custom-fieldset">
-                <div>
-                    <label for="txt">About me</label>
-                    <textarea cols="30" id="txt" name="txt"
-                        placeholder="Enter some info about you..." rows="10"></textarea>
-                </div>
-            </fieldset>
-
-            <div>
-                <button type="submit">Sign up</button>
-                <button type="reset">Clear form</button>
+    <main class="main">
+        <div class="main__container">
+            <h1 class="main__header__title">Registration</h1>
+            <div class="main__sign_up__container">
+                <form class="main__sign_up__container__form"
+                    action="https://tests.fomenko.top/echo/index.php" method="GET">
+                    <div class="main__sign_up__container__form__fieldset__section">
+                        <fieldset class="main__sign_up__container__form__fieldset">
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1"
+                                    for="lastname">Lastname</label>
+                                <input class="main__sign_up__container__form__fieldset__row__input"
+                                    id="lastname" name="lastname" placeholder="Red" type="text">
+                            </div>
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1"
+                                    for="firstname">Firstname</label>
+                                <input class="main__sign_up__container__form__fieldset__row__input"
+                                    id="firstname" name="firstname" placeholder="Multis" type="text">
+                            </div>
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1"
+                                    for="surname">Surname</label>
+                                <input class="main__sign_up__container__form__fieldset__row__input"
+                                    id="surname" name="surname" placeholder="Surname" type="text">
+                            </div>
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1" for="date">Date of
+                                    birth</label>
+                                <input class="main__sign_up__container__form__fieldset__row__input__date"
+                                    id="date" name="date" type="date">
+                            </div>
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1">Choose your gender:</label>
+                                <div class="main__sign_up__container__form__radio__section">
+                                    <div class="main__sign_up__container__form__fieldset__row__radio">
+                                        <input id="gender-male" name="gender" type="radio" value="male">
+                                        <label for="gender-male">Man</label>
+                                    </div>
+                                    <div class="main__sign_up__container__form__fieldset__row__radio">
+                                        <input id="gender-female" name="gender" type="radio"
+                                            value="female">
+                                        <label for="gender-female">Female</label>
+                                    </div>
+                                    <div class="main__sign_up__container__form__fieldset__row__radio">
+                                        <input id="gender-non-binary" name="gender" type="radio"
+                                            value="non-binary">
+                                        <label for="gender-non-binary">Non Binary</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+    
+                        <fieldset class="main__sign_up__container__form__fieldset">
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1" for="avatar">Choose
+                                    avatar</label>
+                                <input
+                                    class="main__sign_up__container__form__fieldset__row__input__avatar"
+                                    id="avatar" name="avatar" type="file">
+                            </div>
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1" for="email">Email</label>
+                                <input class="main__sign_up__container__form__fieldset__row__input"
+                                    id="email" name="email" placeholder="exp@red.com" type="email">
+                            </div>
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1"
+                                    for="password">Password</label>
+                                <input class="main__sign_up__container__form__fieldset__row__input"
+                                    id="password" name="password" placeholder="try smth new 🥸"
+                                    type="password">
+                            </div>
+    
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1" for="site">Web
+                                    address</label>
+                                <input class="main__sign_up__container__form__fieldset__row__input"
+                                    id="site" name="site" type="text" value="red.website">
+                            </div>
+    
+                            <div class="main__sign_up__container__form__fieldset__row">
+                                <label class="main__container__subtitle__1">Choose your
+                                    preferred
+                                    dishes:</label>
+                                <div class="main__sign_up__container__form__radio__section">
+                                    <div>
+                                        <input checked id="kitchen-ua" name="kitchen" type="checkbox"
+                                            value="ua">
+                                        <label for="kitchen-ua">Ukraininan</label>
+                                    </div>
+                                    <div>
+                                        <input id="kitchen-jp" name="kitchen" type="checkbox"
+                                            value="jp">
+                                        <label for="kitchen-jp">Japanese</label>
+                                    </div>
+                                    <div>
+                                        <input id="kitchen-ch" name="kitchen" type="checkbox"
+                                            value="ch">
+                                        <label for="kitchen-ch">Chinese</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <fieldset class="main__sign_up__container__form__fieldset">
+                        <div class="main__contacts__container__section__row__form__fieldset__row">
+                            <label class="main__container__subtitle__1" for="txt">About me</label>
+                            <textarea class="main__sign_up__container__form__fieldset__textarea" cols="30" id="txt" name="txt"
+                                placeholder="Enter some info about you..." rows="10"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="main__sign_up__container__form__buttons__section">
+                        <button class="main__contacts__container__section__row__form__fieldset__row__input__submit" type="submit">Sign up</button>
+                        <button class="main__contacts__container__section__row__form__fieldset__row__input__submit" type="reset">Clear form</button>
+                    </div>
+                </form>
             </div>
-        </form>
+        </div>
     </main>
 
     <footer class="footer">
@@ -159,3 +166,17 @@
 </body>
 
 </html>
+
+<!-- 
+                    <fieldset class="main__sign_up__container__section__row__form__fieldset">
+                        <div class="main__contacts__container__section__row__form__fieldset__row">
+                            <label for="txt">About me</label>
+                            <textarea class="main__contacts__container__section__row__form__fieldset__row__input__textarea" cols="30" id="txt" name="txt"
+                                placeholder="Enter some info about you..." rows="10"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <button class="main__sign_up__container__section__row__form__fieldset__row__input__submit" type="submit">Sign up</button>
+                        <button class="main__sign_up__container__section__row__form__fieldset__row__input__submit" type="reset">Clear form</button>
+                    </div> -->
