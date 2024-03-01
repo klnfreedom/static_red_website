@@ -25,7 +25,7 @@
                     <li><a class="header__nav__item" href="articles.html">Articles</a>
                     </li>
                     <li><a class="header__nav__item" href="catalog.html">Catalog</a></li>
-                    <li><a class="header__nav__item" href="contacts.html">Contacts</a>
+                    <li><a class="header__nav__item active" href="contacts.html">Contacts</a>
                     </li>
                     <li><a class="header__nav__item" href="gallery.html">Gallery</a></li>
                     <li><a class="header__nav__item" href="page-nav.html">Page-Nav</a>
@@ -41,10 +41,91 @@
         <div class="main__container">
             <h1 class="main__header__title">Contacts</h1>
             <div class="main__container__card">
-                
+                <div class="main__contacts__container__section__row">
+                    <div class="main__contacts__container__section__row__item">
+                        <div>
+                            <p class="main__container__subtitle__1">How to find us</p>
+                            <div class="main__contacts__google__map">
+                                <iframe style="height:100%;width:100%;border:0;"
+                                    src="https://www.google.com/maps/embed/v1/search?q=Heroiv+Bresta+Lane,+Kremenchuk,+Poltava+Oblast,+Ukraine&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__contacts__container__section__row__item">
+                        <p class="main__container__subtitle__1">Company Info</p>
+                        <div class="main__contacts__container__section__row__item__contact__info">
+                            <p>
+                                <span
+                                    class="main__contacts__container__section__row__item__title">Address:</span>
+                                <span
+                                    class="main__contacts__container__section__row__item__text">Heroiv
+                                    Bresta Ln, Kremenchuk</span>
+                            </p>
+                            <p>
+                                <span
+                                    class="main__contacts__container__section__row__item__title">Email:</span>
+                                <span
+                                    class="main__contacts__container__section__row__item__text">klnfreedom@gmail.com</span>
+                            </p>
+                            <p>
+                                <span
+                                    class="main__contacts__container__section__row__item__title">Phone:</span>
+                                <span
+                                    class="main__contacts__container__section__row__item__text">+380
+                                    67 626 2789</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="main__container__subtitle__1">Contact Us</p>
+                    <form class="main__contacts__container__section__row__form"
+                        action="https://tests.fomenko.top/echo/index.php" method="GET">
+                        <fieldset class="main__contacts__container__section__row__form__fieldset">
+                            <div
+                                class="main__contacts__container__section__row__form__fieldset__row">
+                                <label for="name-cont">Name</label>
+                                <input
+                                    class="main__contacts__container__section__row__form__fieldset__row__input"
+                                    id="name-cont" name="name-cont" type="text" placeholder="Red">
+                            </div>
+                            <div
+                                class="main__contacts__container__section__row__form__fieldset__row">
+                                <label for="tel">Phone</label>
+                                <input
+                                    class="main__contacts__container__section__row__form__fieldset__row__input"
+                                    id="tel" name="tel" type="tel" placeholder="+380 (XX) XXX XXXX">
+                            </div>
+                            <div
+                                class="main__contacts__container__section__row__form__fieldset__row">
+                                <label for="email-cont">Email</label>
+                                <input
+                                    class="main__contacts__container__section__row__form__fieldset__row__input"
+                                    id="email-cont" name="email-cont" type="email"
+                                    placeholder="exp@red.com">
+                            </div>
+                            <div
+                                class="main__contacts__container__section__row__form__fieldset__row">
+                                <label for="txt-question">Ask question</label>
+                                <textarea
+                                    class="main__contacts__container__section__row__form__fieldset__row__input__textarea"
+                                    cols="30" id="txt-question" name="txt-question"
+                                    rows="10"></textarea>
+                            </div>
+                            <div>
+                                <button
+                                    class="main__contacts__container__section__row__form__fieldset__row__input__submit"
+                                    type="submit">Send</button>
+                                <button
+                                    class="main__contacts__container__section__row__form__fieldset__row__input__submit"
+                                    type="reset">Clear</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
-        
     </main>
 
     <footer class="footer">
@@ -55,39 +136,3 @@
 </body>
 
 </html>
-
-<!-- <p>prov. Heroiv Mariupolya, Kremenchuk</p>
-
-    <div>
-        <img src="../src/images/contacts_map.png" alt="Google Map" width="300" height="250">
-    </div>
-
-    <div>
-        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
-            <fieldset>
-                <legend>Contact's Info</legend>
-                <div>
-                    <label for="name-cont">Name</label>
-                    <input id="name-cont" name="name-cont" placeholder="Name" type="text">
-                </div>
-                <div>
-                    <label for="tel">Phone</label>
-                    <input id="tel" name="tel" placeholder="Phone" type="tel">
-                </div>
-                <div>
-                    <label for="email-cont">Email</label>
-                    <input id="email-cont" name="email-cont" placeholder="Email" type="email">
-                </div>
-                <div>
-                    <label for="txt-question">Ask question</label>
-                    <textarea cols="30" id="txt-question" name="txt-question" rows="10"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Send form</button>
-                </div>
-                <div>
-                    <button type="reset">Clear form</button>
-                </div>
-            </fieldset>
-        </form>
-    </div> -->

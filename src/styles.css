@@ -121,6 +121,12 @@ body::-webkit-scrollbar {
   transition: 0.3s;
 }
 
+.header__nav__item.active {
+  color: var(--color-accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .main {
   margin: auto;
   margin-bottom: calc(var(--footer-height) + 56px);
@@ -340,5 +346,105 @@ body::-webkit-scrollbar {
 .main__home__container__text__link:hover {
   color: white;
   text-decoration: underline;
+  transition: 0.3s;
+}
+
+.main__contacts__container__section__row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.main__contacts__container__section__row__item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__contacts__container__section__row__item__title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.main__contacts__google__map {
+  height: 300px;
+  width: 100%;
+}
+
+.main__contacts__container__section__row__item__title {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main__contacts__container__section__row__item__text {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main__contacts__container__section__row__item__contact__info {
+  background-color: var(--color-bg-primary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+
+.main__contacts__container__section__row__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main__contacts__container__section__row__form__fieldset {
+  background-color: var(--color-bg-primary);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  align-items: center;
+}
+
+.main__contacts__container__section__row__form__fieldset__row {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main__contacts__container__section__row__form__fieldset__row__input {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.main__contacts__container__section__row__form__fieldset__row__input__textarea {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding: 8px;
+  resize: vertical;
+}
+
+.main__contacts__container__section__row__form__fieldset__row__input__submit {
+  background-color: var(--color-accent);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
   transition: 0.3s;
 }
