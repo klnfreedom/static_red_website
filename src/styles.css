@@ -415,6 +415,7 @@ body::-webkit-scrollbar {
 }
 
 .main__contacts__container__section__row__form__fieldset__row {
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -438,7 +439,7 @@ body::-webkit-scrollbar {
   resize: vertical;
 }
 
-.main__contacts__container__section__row__form__fieldset__row__input__submit {
+.main__form__fieldset__row__input__submit {
   background-color: var(--color-accent);
   border: none;
   color: white;
@@ -448,7 +449,7 @@ body::-webkit-scrollbar {
   transition: 0.3s;
 }
 
-.main__contacts__container__section__row__form__fieldset__row__input__submit:hover {
+.main__form__fieldset__row__input__submit:hover {
   background-color: var(--color-accent-light);
   transition: 0.3s;
   cursor: pointer;
@@ -534,4 +535,10 @@ body::-webkit-scrollbar {
 .main__sign_up__container__form__buttons__section {
   background-color: var(--color-bg-primary);
   padding: 16px;
+}
+
+.main__sign_up__container__section__row__form__fieldset__row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
